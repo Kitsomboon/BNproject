@@ -38,8 +38,8 @@ function Testimonials() {
             alt="ออกแบบและติดตั้ง"
             className="object-cover w-full h-full"
             style={{
-              height: "800px", // กำหนดความสูงตามต้องการ
-              width: "100%", // กำหนดความกว้างตามต้องการ
+              height: "800px",
+              width: "100%",
             }}
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
