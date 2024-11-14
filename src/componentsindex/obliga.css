@@ -1,0 +1,13 @@
+/* Vision.css */
+.text-element,
+.image-element {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.text-element.show,
+.image-element.show {
+  opacity: 1;
+  transform: translateY(0);
+}

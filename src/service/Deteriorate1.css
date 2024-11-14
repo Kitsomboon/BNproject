@@ -1,0 +1,12 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr; /* จัดเรียงเป็นคอลัมน์เดียวเมื่อหน้าจอเล็กกว่า 768px */
+    }
+  }
+  
