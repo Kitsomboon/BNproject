@@ -3,6 +3,10 @@ import image2 from "../assets/d.jpeg";
 import image3 from "../assets/thapkhlo.jpg";
 
 function Testimonials() {
+  const navigateToCustomer = () => {
+    window.location.href = "/customer";
+  };
+
   return (
     <div className="container mx-auto py-16 text-center">
       <h2
