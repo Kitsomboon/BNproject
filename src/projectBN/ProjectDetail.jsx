@@ -77,8 +77,8 @@ function ProjectDetail() {
           </button>
         </div>
       )}
-        <Footer2 />
-        <Footer />
+      <Footer2 />
+      <Footer />
     </div>
   );
 }
