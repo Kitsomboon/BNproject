@@ -54,8 +54,8 @@ function Testimonials() {
             alt="บำรุงรักษาประสิทธิภาพระบบโซล่าร์เซลล์"
             className="object-cover w-full h-full"
             style={{
-              height: "800px", // กำหนดความสูงตามต้องการ
-              width: "100%", // กำหนดความกว้างตามต้องการ
+              height: "800px",
+              width: "100%",
             }}
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
@@ -70,8 +70,8 @@ function Testimonials() {
             alt="กำจัดแผงโซล่าร์เซลล์ที่เสื่อมสภาพ"
             className="object-cover w-full h-full"
             style={{
-              height: "800px", // กำหนดความสูงตามต้องการ
-              width: "100%", // กำหนดความกว้างตามต้องการ
+              height: "800px",
+              width: "100%",
             }}
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
@@ -79,8 +79,10 @@ function Testimonials() {
           </div>
         </div>
       </div>
-
-      <button className="mt-12 bg-black text-white px-6 py-3 rounded-full hover:bg-orange-500 transition duration-300">
+      <button
+        onClick={navigateToCustomer}
+        className="mt-12 bg-black text-white px-6 py-3 rounded-full hover:bg-orange-500 transition duration-300"
+      >
         ดูบริการทั้งหมด
       </button>
     </div>
