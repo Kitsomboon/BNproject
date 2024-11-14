@@ -15,7 +15,7 @@ function About5() {
     <section className="flex flex-col md:flex-row items-center justify-center bg-white py-20 md:py-32 px-10 md:px-12">
       {/* Left Side - Text Content */}
       <div
-        className="md:w-1/2 mb-10 md:mb-0 text-center md:gap-20 lg:gap-40 xl:gap-80"
+        className="md:w-1/2 mb-10 md:mb-0  md:gap-20 lg:gap-40 xl:gap-80"
         data-aos="fade-right" // เพิ่มเอฟเฟกต์ pop-up ให้กับส่วนข้อความ
       >
         <h1 className="text-6xl font-bold mb-6 leading-tight">
