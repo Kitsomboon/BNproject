@@ -13,7 +13,7 @@ function ProjectDetail() {
   const images = JSON.parse(queryParams.get("images") || "[]");
   const title = queryParams.get("title") || "Default Title";
   const description = queryParams.get("description") || "Default Description";
-  
+
   const [selectedImage, setSelectedImage] = useState(null);
 
   const openImage = (image) => {
