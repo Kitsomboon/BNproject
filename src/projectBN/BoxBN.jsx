@@ -1,24 +1,36 @@
 import { projects } from "./project"; // นำเข้าข้อมูลจาก project.js
 import { FaArrowRight } from "react-icons/fa"; // ใช้ไอคอนจาก react-icons
-import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 function ProjectBox({ images, title, description }) {
+  const navigateToDetail = () => {
+    // Encode the data as query parameters
+    const queryParams = new URLSearchParams({
+      images: JSON.stringify(images),
+      title,
+      description,
+    }).toString();
+
+    // Navigate to /project-detail with the encoded state data
+    window.location.href = `/project-detail?${queryParams}`;
+  };
+
   return (
     <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl">
       {/* แสดงภาพแรกในอาร์เรย์ images เป็นภาพหลัก */}
       <img src={images[0]} alt={title} className="w-full h-56 object-cover" />
       <div className="p-6">
-        <h3 className="text-lg font-bold text-gray-800 text-center mb-2">{title}</h3>
+        <h3 className="text-lg font-bold text-gray-800 text-center mb-2">
+          {title}
+        </h3>
         <p className="text-gray-600 text-center mb-4">{description}</p>
-        <div className="text-center">
-          <Link
-            to="/project-detail"
-            state={{ images, title, description }}
-            className="text-orange-500 flex items-center justify-center hover:underline"
+        <div className="flex justify-center">
+          <button
+            onClick={navigateToDetail}
+            className="text-orange-500 flex items-center hover:underline"
           >
             ดูเพิ่มเติม <FaArrowRight className="ml-1" />
-          </Link>
+          </button>
         </div>
       </div>
     </div>

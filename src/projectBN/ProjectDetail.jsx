@@ -4,18 +4,24 @@ import Nav from "../components/Nav";
 import image1 from "/src/assets/thapkhlo4.jpg";
 import Footer from "../components/Footer";
 import Footer2 from "../componentsindex/Footer2";
+
 function ProjectDetail() {
   const location = useLocation();
-  const { images = [], title, description } = location.state || {};
+  const queryParams = new URLSearchParams(location.search);
+
+  // Parse images, title, and description from query parameters
+  const images = JSON.parse(queryParams.get("images") || "[]");
+  const title = queryParams.get("title") || "Default Title";
+  const description = queryParams.get("description") || "Default Description";
   
-  const [selectedImage, setSelectedImage] = useState(null); // state สำหรับภาพที่เลือกเพื่อแสดงใน modal
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const openImage = (image) => {
-    setSelectedImage(image); // กำหนดภาพที่ต้องการขยาย
+    setSelectedImage(image);
   };
 
   const closeImage = () => {
-    setSelectedImage(null); // ปิด modal
+    setSelectedImage(null);
   };
 
   return (
@@ -38,7 +44,7 @@ function ProjectDetail() {
       </div>
 
       <div className="bg-white min-h-screen p-4 mt-20">
-        <div className="bg-gray-300 shadow-lg rounded-lg overflow-hidden mx-auto max-w-10xl    p-8">
+        <div className="bg-gray-300 shadow-lg rounded-lg overflow-hidden mx-auto max-w-10xl p-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
             {images.map((image, index) => (
               <img
@@ -46,14 +52,13 @@ function ProjectDetail() {
                 src={image}
                 alt={`${title} - image ${index + 1}`}
                 className="w-full h-80 object-cover rounded-lg cursor-pointer"
-                onClick={() => openImage(image)} // เปิด modal เมื่อคลิกภาพ
+                onClick={() => openImage(image)}
               />
             ))}
           </div>
         </div>
       </div>
 
-      {/* Modal สำหรับแสดงภาพขยาย */}
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
