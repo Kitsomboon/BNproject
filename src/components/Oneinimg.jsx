@@ -61,19 +61,7 @@ function Oneinimg() {
       }}
     >
       สอบถาม และการให้คําปรึกษา
-      <span
-        style={{
-          content: '""',
-          position: "absolute",
-          bottom: "-5px",
-          left: "30%", // จัดให้อยู่ตรงกลาง
-          transform: "translateX(-50%)",
-          width: "10%", // กำหนดความยาวของเส้นใต้
-          height: "2px",
-          backgroundColor: "orange",
-          transition: "width 0.3s ease-in-out",
-        }}
-      ></span>
+     
     </h2>
 
     <p className="text-gray-600 mt-4 leading-relaxed">
