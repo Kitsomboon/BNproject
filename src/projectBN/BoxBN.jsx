@@ -39,18 +39,28 @@ function ProjectBox({ images, title, description }) {
 
 function BoxBN() {
   return (
-    <div className="bg-gradient-to-b from-gray-100 to-gray-200 p-8">
+    <div className="bg-gradient-to-b from-gray-100 to-gray-200 p-20">
       <h2
-        className="text-4xl font-bold mb-12 text-center text-gray-800"
+      className="text-4xl font-bold text-black mb-4 text-center relative "
+      style={{
+        position: "relative",
+      }}
+    >
+      โครงการของเรา
+      <span
         style={{
-          textDecoration: "underline",
-          textDecorationThickness: "5px",
-          textUnderlineOffset: "10px",
-          textDecorationColor: "orange",
+          content: '""',
+          position: "absolute",
+          bottom: "-5px",
+          left: "50%", // จัดให้อยู่ตรงกลาง
+          transform: "translateX(-50%)",
+          width: "5%", // กำหนดความยาวของเส้นใต้
+          height: "2px",
+          backgroundColor: "orange",
+          transition: "width 0.3s ease-in-out",
         }}
-      >
-        โครงการของเรา
-      </h2>
+      ></span>
+    </h2>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 px-4 mx-auto ">
         {projects.map((project, index) => (
           <ProjectBox
