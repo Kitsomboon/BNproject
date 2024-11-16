@@ -2,18 +2,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
-import { FreeMode, Pagination, Autoplay } from "swiper/modules"; // นำเข้า Autoplay
+import "swiper/css/autoplay"; // Import autoplay CSS
+import { FreeMode, Pagination, Autoplay } from "swiper/modules"; // Add Autoplay here
 import { RxArrowTopRight } from "react-icons/rx";
 import { ServiceData } from "../componentsindex/index";
 
 const CircularCarousel = () => {
   return (
-    <div className="flex items-center bg-white justify-center flex-col h-[500px] bg-gray-100">
+    <div className="flex items-center justify-center flex-col h-[500px] bg-gray-100">
       <Swiper
         breakpoints={{
           340: {
-            slidesPerView: 1,
-            spaceBetween: 40,
+            slidesPerView: 1, // Show one slide at a time on mobile
+            spaceBetween: 40, // Larger space between slides on mobile
           },
           700: {
             slidesPerView: 2,
@@ -25,16 +26,16 @@ const CircularCarousel = () => {
           },
         }}
         freeMode={true}
-        loop={true} // เพิ่ม loop เพื่อให้ Swiper ทำซ้ำได้
         pagination={{
           clickable: true,
         }}
         autoplay={{
-          delay: 2000, // ตั้งค่าความหน่วงเวลาในการขยับ (หน่วยเป็นมิลลิวินาที)
-          disableOnInteraction: false, // ให้ autoplay ทำงานต่อหลังจากผู้ใช้มีปฏิสัมพันธ์
+          delay: 3000, // Delay between slides in milliseconds (3 seconds here)
+          disableOnInteraction: false, // Keeps autoplay even when user interacts with the carousel
         }}
-        modules={[FreeMode, Pagination, Autoplay]} // เพิ่ม Autoplay
-        className="max-w-[60%] lg:max-w-[80%]"
+        loop={true} // Enable continuous loop
+        modules={[FreeMode, Pagination, Autoplay]} // Add Autoplay to modules
+        className="max-w-[60%] lg:max-w-[70%]"
       >
         {ServiceData.map((item) => (
           <SwiperSlide key={item.title}>
