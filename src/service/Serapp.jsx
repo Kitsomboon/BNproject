@@ -46,17 +46,27 @@ function Serapp() {
   return (
     <div className="py-12 bg-white">
       <div className="container mx-auto p-6">
-        <h1
-          className="text-4xl font-bold text-center mb-8 text-gray-800"
+      <h2
+        className="text-4xl font-bold text-black mb-8 text-center"
+        style={{
+          position: "relative",
+        }}
+      >
+        บริการหลังการขาย
+        <span
           style={{
-            textDecoration: "underline",
-            textDecorationThickness: "5px",
-            textUnderlineOffset: "10px",
-            textDecorationColor: "orange",
+            content: '""',
+            position: "absolute",
+            bottom: "-5px",
+            left: "50%",
+            transform: "translateX(-50%)",
+            width: "5%",
+            height: "2px",
+            backgroundColor: "orange",
+            transition: "width 0.3s ease-in-out",
           }}
-        >
-          บริการหลังการขาย
-        </h1>
+        ></span>
+      </h2>
         <p className="text-center text-black mb-8">ทีมงานพร้อมช่วยเหลือ ให้คำปรึกษาได้ตลอดเวลา</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (

@@ -10,7 +10,6 @@ function Nav() {
 
   const handleLinkClick = (path) => {
     window.location.href = path; // นำทางไปที่เส้นทางที่ต้องการ
-    
   };
 
   useEffect(() => {
