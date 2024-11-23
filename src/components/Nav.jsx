@@ -22,8 +22,10 @@ function Nav() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full p-3 z-50 transition-all duration-500 ${
-        isScrolled ? "bg-black bg-opacity-80 shadow-lg rounded-b-[100px]" : "bg-transparent"
+      className={`fixed top-0 left-0 w-full p-3 z-[100] transition-all duration-500 ${
+        isScrolled
+          ? "bg-black bg-opacity-80 shadow-lg md:rounded-b-[100px]" // โค้งเฉพาะเดสก์ท็อป
+          : "bg-transparent"
       }`}
     >
       <div className="flex items-center justify-between container mx-auto">
@@ -107,7 +109,7 @@ function Nav() {
 
       {/* เมนูมือถือ */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-orange-900 bg-opacity-95 flex flex-col justify-center items-center z-50">
+        <div className="fixed inset-0 bg-orange-900 bg-opacity-95 flex flex-col justify-center items-center z-[200]">
           <ul className="space-y-6 text-center">
             <li>
               <button
