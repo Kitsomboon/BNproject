@@ -27,7 +27,7 @@ function Hero1() {
 
       // สลับสถานะการพลิกภาพ
       setFlip((prevFlip) => !prevFlip);
-    }, 4000); // เปลี่ยนภาพทุก 3 วินาที
+    }, 4000); // เปลี่ยนภาพทุก 4 วินาที
 
     return () => clearInterval(interval); // ล้าง interval เมื่อ component ถูก unmount
   }, [currentImage]); // เพิ่ม currentImage ใน dependency array
@@ -85,10 +85,23 @@ function Hero1() {
 
           {/* ส่วนภาพ */}
           <div className="relative lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
+            {/* เงาภาพ */}
+            <div
+              className={`absolute w-[400px] h-auto rounded-lg shadow-lg transform ${
+                flip ? 'scale-x-[-1]' : ''
+              }`}
+              style={{
+                backgroundImage: `url(${currentImage})`,
+                filter: 'blur(10px) brightness(0.5)',
+                zIndex: -1,
+              }}
+            ></div>
+
+            {/* ภาพหลัก */}
             <img
               src={currentImage}
               alt="Solar Power"
-              className={`rounded-lg shadow-lg w-[400px] h-auto object-cover transition-transform duration-500 ${
+              className={`rounded-lg  w-[350px] h-auto object-cover transition-transform duration-500 ${
                 flip ? 'transform scale-x-[-1]' : ''
               }`}
             />

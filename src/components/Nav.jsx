@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -23,18 +22,18 @@ function Nav() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full p-3 z-50 transition-colors duration-500 ${
-        isScrolled ? "bg-black bg-opacity-80" : "bg-transparent"
+      className={`fixed top-0 left-0 w-full p-3 z-50 transition-all duration-500 ${
+        isScrolled ? "bg-black bg-opacity-80 shadow-lg rounded-b-[100px]" : "bg-transparent"
       }`}
     >
-      <div className="flex items-center justify-between  container mx-auto">
+      <div className="flex items-center justify-between container mx-auto">
         <div
           className="text-white text-center font-bold hover:text-transparent 
           hover:bg-clip-text hover:bg-gradient-to-r hover:from-orange-800 hover:to-black transition duration-500"
           onClick={() => handleLinkClick("/")}
         >
-          <div className=" lg:text-5xl">B.N.</div>
-          <div className=" lg:text-lg mt-1">SOLAR POWER Co., Ltd. </div>
+          <div className="lg:text-5xl">B.N.</div>
+          <div className="lg:text-lg mt-1">SOLAR POWER Co., Ltd. </div>
         </div>
 
         <div className="md:hidden">
@@ -55,41 +54,41 @@ function Nav() {
 
         {/* เมนูเนื้อหา */}
         <ul className="hidden md:flex space-x-6">
-          <li className="relative group">
+          <li>
             <button
-              className="text-white focus:outline-none px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
+              className="text-white px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
               onClick={() => handleLinkClick("/")}
             >
               หน้าหลัก
             </button>
           </li>
-          <li className="relative group">
+          <li>
             <button
-              className="text-white focus:outline-none px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
+              className="text-white px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
               onClick={() => handleLinkClick("/index")}
             >
               เกี่ยวกับ
             </button>
           </li>
-          <li className="relative group">
+          <li>
             <button
-              className="text-white focus:outline-none px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
+              className="text-white px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
               onClick={() => handleLinkClick("/organization")}
             >
               โครงสร้างองค์กร
             </button>
           </li>
-          <li className="relative group">
+          <li>
             <button
-              className="text-white focus:outline-none px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
+              className="text-white px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
               onClick={() => handleLinkClick("/customer")}
             >
               บริการ
             </button>
           </li>
-          <li className="relative group">
+          <li>
             <button
-              className="text-white focus:outline-none px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
+              className="text-white px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
               onClick={() => handleLinkClick("/project")}
             >
               โครงการ
@@ -97,7 +96,7 @@ function Nav() {
           </li>
           <li>
             <button
-              className="text-orange-600 bg-white px-4 py-2 rounded-full hover:bg-black hover:text-orange-500 transition duration-300 transform hover:scale-105 focus:outline-none"
+              className="text-orange-600 bg-white px-4 py-2 rounded-full hover:bg-black hover:text-orange-500 transition duration-300 transform hover:scale-105"
               onClick={() => handleLinkClick("/contact")}
             >
               ช่องทางการติดต่อ
@@ -109,21 +108,11 @@ function Nav() {
       {/* เมนูมือถือ */}
       {isMenuOpen && (
         <div className="fixed inset-0 bg-orange-900 bg-opacity-95 flex flex-col justify-center items-center z-50">
-          {/* ส่วนหัวที่แสดงตรงกลางบนสุด */}
-          <div
-            className="mb-8 text-white text-center font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-orange-800 hover:to-black transition duration-500"
-            onClick={() => handleLinkClick("/")}
-          >
-            <div className="text-5xl lg:text-6xl">B.N.</div>
-            <div className="text-lg lg:text-xl mt-1">SOLAR POWER</div>
-          </div>
-
-          {/* รายการเมนู */}
-          <ul className="space-y-6">
+          <ul className="space-y-6 text-center">
             <li>
               <button
-                onClick={() => handleLinkClick("/")}
                 className="text-white text-2xl focus:outline-none px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
+                onClick={() => handleLinkClick("/")}
               >
                 หน้าหลัก
               </button>
@@ -162,17 +151,15 @@ function Nav() {
             </li>
             <li>
               <button
-                className="text-orange-600 text-2xl bg-white px-6 py-3 rounded-full hover:bg-black hover:text-orange-500 transition duration-300 transform hover:scale-105 focus:outline-none"
+                className="text-orange-600 text-2xl bg-white px-6 py-3 rounded-full hover:bg-black hover:text-orange-500 transition duration-300 transform hover:scale-105"
                 onClick={() => handleLinkClick("/contact")}
               >
                 ช่องทางการติดต่อ
               </button>
             </li>
           </ul>
-
-          {/* ปุ่มปิดเมนู */}
           <button
-            className="mt-10 px-8 py-4 bg-orange-500 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-black hover:text-orange-600 transition duration-300"
+            className="mt-10 px-8 py-4 bg-orange-500 text-gray-800 font-semibold rounded-lg hover:bg-black hover:text-orange-600 transition duration-300"
             onClick={toggleMenu}
           >
             ปิดเมนู
