@@ -24,17 +24,17 @@ function Nav() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full p-3 z-50 transition-colors duration-500 ${
-        isScrolled ? "bg-orange-500" : "bg-transparent"
+        isScrolled ? "bg-black bg-opacity-80" : "bg-transparent"
       }`}
     >
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between  container mx-auto">
         <div
           className="text-white text-center font-bold hover:text-transparent 
           hover:bg-clip-text hover:bg-gradient-to-r hover:from-orange-800 hover:to-black transition duration-500"
           onClick={() => handleLinkClick("/")}
         >
-          <div className="text-5xl lg:text-5xl">B.N.</div>
-          <div className="text-lg lg:text-xl mt-1">SOLAR POWER </div>
+          <div className=" lg:text-5xl">B.N.</div>
+          <div className=" lg:text-lg mt-1">SOLAR POWER Co., Ltd. </div>
         </div>
 
         <div className="md:hidden">
@@ -54,7 +54,7 @@ function Nav() {
         </div>
 
         {/* เมนูเนื้อหา */}
-        <ul className="hidden md:flex space-x-14">
+        <ul className="hidden md:flex space-x-6">
           <li className="relative group">
             <button
               className="text-white focus:outline-none px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
