@@ -45,7 +45,7 @@ function Oneinimg() {
       className={`container mx-auto flex flex-col md:flex-row-reverse items-center py-16 md:px-0 
         transform transition-all duration-700 ${
           isVisible ? "opacity-100 translate-y-10" : "opacity-0 translate-y-20"
-        } md:gap-20`}
+        } md:gap-0`}
     >
       {/* Images Section */}
       <div className="relative flex items-center w-full md:w-1/2">
