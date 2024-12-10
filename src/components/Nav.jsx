@@ -24,14 +24,14 @@ function Nav() {
     <nav
       className={`fixed top-0 left-0 w-full p-3 z-[100] transition-all duration-500 ${
         isScrolled
-          ? "bg-black bg-opacity-80 shadow-lg md:rounded-b-[100px]" // โค้งเฉพาะเดสก์ท็อป
+          ? "bg-[#16171f] bg-opacity-100 shadow-lg md:rounded-b-[100px]" // โค้งเฉพาะเดสก์ท็อป
           : "bg-transparent"
       }`}
     >
       <div className="flex items-center justify-between container mx-auto">
         <div
           className="text-white text-center font-bold hover:text-transparent 
-          hover:bg-clip-text hover:bg-gradient-to-r hover:from-orange-800 hover:to-black transition duration-500"
+          hover:bg-clip-text hover:bg-gradient-to-r hover:from-orange-800 hover:to-[#2a4056] transition duration-500"
           onClick={() => handleLinkClick("/")}
         >
           <div className="lg:text-5xl">B.N.</div>
@@ -58,7 +58,7 @@ function Nav() {
         <ul className="hidden md:flex space-x-6">
           <li>
             <button
-              className="text-white px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
+              className="text-white px-4 py-2 rounded hover:bg-[#d1543c] hover:text-[#000000] transition duration-300"
               onClick={() => handleLinkClick("/")}
             >
               หน้าหลัก
@@ -66,7 +66,7 @@ function Nav() {
           </li>
           <li>
             <button
-              className="text-white px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
+              className="text-white px-4 py-2 rounded hover:bg-[#d1543c] hover:text-[#000000] transition duration-300"
               onClick={() => handleLinkClick("/index")}
             >
               เกี่ยวกับ
@@ -74,7 +74,7 @@ function Nav() {
           </li>
           <li>
             <button
-              className="text-white px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
+              className="text-white px-4 py-2 rounded hover:bg-[#d1543c] hover:text-[#000000] transition duration-300"
               onClick={() => handleLinkClick("/organization")}
             >
               โครงสร้างองค์กร
@@ -82,7 +82,7 @@ function Nav() {
           </li>
           <li>
             <button
-              className="text-white px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
+              className="text-white px-4 py-2 rounded hover:bg-[#d1543c] hover:text-[#000000] transition duration-300"
               onClick={() => handleLinkClick("/customer")}
             >
               บริการ
@@ -90,7 +90,7 @@ function Nav() {
           </li>
           <li>
             <button
-              className="text-white px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
+              className="text-white px-4 py-2 rounded hover:bg-[#d1543c] hover:text-[#000000] transition duration-300"
               onClick={() => handleLinkClick("/project")}
             >
               โครงการ
@@ -98,7 +98,7 @@ function Nav() {
           </li>
           <li>
             <button
-              className="text-orange-600 bg-white px-4 py-2 rounded-full hover:bg-black hover:text-orange-500 transition duration-300 transform hover:scale-105"
+              className="text-orange-600 bg-white px-4 py-2 rounded-full hover:bg-[#d1543c] hover:text-[#000000] transition duration-300 transform hover:scale-105"
               onClick={() => handleLinkClick("/contact")}
             >
               ช่องทางการติดต่อ

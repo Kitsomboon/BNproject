@@ -36,7 +36,7 @@ import image4 from '../assets/solar8.jpg';function Hero1() {
           position: 'relative',
           borderBottomLeftRadius: borderRadius,
           borderBottomRightRadius: borderRadius,
-          backgroundColor: '#f97316', // สีส้ม
+          backgroundColor: '#16171f', 
           color: 'white',
         }}
       >
@@ -60,28 +60,28 @@ import image4 from '../assets/solar8.jpg';function Hero1() {
               {/* วงกลมพร้อมไอคอน */}
               <div className="flex justify-center lg:justify-start gap-8 mt-16">
                 <div className="flex flex-col items-center">
-                  <div className="w-20 h-20 bg-yellow-300 hover:bg-black text-white rounded-full flex items-center justify-center shadow-lg">
+                  <div className="w-20 h-20 bg-[#d1543c] hover:bg-[#2a4056] text-white rounded-full flex items-center justify-center shadow-lg">
                     <IoFilmOutline size={30} />
                   </div>
-                  <p className="mt-2 text-sm">ประวัติ</p>
+                  <p className="mt-2 text-sm">About</p>
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="w-20 h-20 bg-yellow-300 hover:bg-black text-white rounded-full flex items-center justify-center shadow-lg">
+                  <div className="w-20 h-20 bg-[#d1543c] hover:bg-[#2a4056] text-white rounded-full flex items-center justify-center shadow-lg">
                     <IoDocumentOutline size={30} />
                   </div>
-                  <p className="mt-2 text-sm">โครงการ</p>
+                  <p className="mt-2 text-sm">Project</p>
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="w-20 h-20 bg-yellow-300 hover:bg-black text-white rounded-full flex items-center justify-center shadow-lg">
+                  <div className="w-20 h-20 bg-[#d1543c] hover:bg-[#2a4056] text-white rounded-full flex items-center justify-center shadow-lg">
                     <box-icon type="solid" name="server" color="white" size="md"></box-icon>
                   </div>
-                  <p className="mt-2 text-sm">บริการ</p>
+                  <p className="mt-2 text-sm">Service</p>
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="w-20 h-20 bg-yellow-300 hover:bg-black text-white rounded-full flex items-center justify-center shadow-lg">
+                  <div className="w-20 h-20 bg-[#d1543c] hover:bg-[#2a4056] text-white rounded-full flex items-center justify-center shadow-lg">
                     <IoCallOutline size={30} />
                   </div>
-                  <p className="mt-2 text-sm">บริการ</p>
+                  <p className="mt-2 text-sm">Contact</p>
                 </div>
               </div>
             </div>
