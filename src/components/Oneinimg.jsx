@@ -93,7 +93,8 @@ function Oneinimg() {
         <button
           onClick={handleNavigation}
           className="mt-6 bg-[#d1543c] text-white px-8 py-2 
-            hover:bg-[#16171f] hover:text-[#d1543c]  transition duration-300 shadow-md"
+            hover:bg-[#ffffff] hover:text-[#d1543c] hover:border-[#d1543c]  transition duration-300 shadow-md 
+            border-4 border-[#d1543c] rounded-md"
         >
           Contact Us Now
         </button>
