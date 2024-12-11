@@ -2,7 +2,7 @@ import image1 from "/src/assets/B.Nlo.jpg";
 
 function Footer3() {
   return (
-    <footer className="bg-[#16171f]   py-8 px-4 w-[auto] h-[300px]">
+    <footer className="bg-[#ffffff]   py-8 px-4 w-[auto] h-[300px]">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start ">
         {/* Left Section */}
         <div className="mb-6 md:mb-0 md:w-1/3 flex items-center md:justify-start">

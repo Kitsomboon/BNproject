@@ -7,6 +7,7 @@ import Twoinimg from './components/Twoinimg'
 import Testimonials from './components/Testimonials'
 
 import Hero1 from './components/Hero1'
+import Dropnav from './components/Dropnav'
 function App() {
   return (
     <>
@@ -14,8 +15,9 @@ function App() {
     <Hero1 />
 
     <Oneinimg />
-    <Twoinimg />
     <Testimonials />
+    <Twoinimg />
+    <Dropnav />
     
     <Footer3 />
     <Footer />

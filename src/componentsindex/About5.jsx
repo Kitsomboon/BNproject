@@ -29,7 +29,7 @@ function About5() {
           ความเป็นมา
           {/* Add Solar Icon Before Text */}
           
-        </h1><span className="text-[#d1543c] flex items-center  md:text-5xl font-bold mb-6">
+        </h1><span className="text-[#d1543c] flex items-center  md:text-5xl font-bold mb-6"  data-aos="fade-up">
             <FaSolarPanel className="text-[#d1543c] text-5xl mr-2" />
             B.N. SOLAR POWER
           </span>
