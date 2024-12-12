@@ -9,7 +9,7 @@ function Organization() {
   return (
     <>
     <Nav />
-    <Hero3 />
+    <Hero3 /> 
     <Structure />
     <ManagementTeam />
    <Footer2 />
