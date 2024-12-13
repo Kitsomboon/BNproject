@@ -39,8 +39,8 @@ function ProjectBox({ images, title, description }) {
 
 function BoxBN() {
   return (
-    <div className="bg-gradient-to-b from-gray-100 to-gray-200 p-20">
-      <h2
+    <div className="bg-gradient-to-b  to-white p-24">
+      {/* <h2
         className="text-4xl font-bold text-black mb-4 text-center relative "
         style={{
           position: "relative",
@@ -60,7 +60,7 @@ function BoxBN() {
             transition: "width 0.3s ease-in-out",
           }}
         ></span>
-      </h2>
+      </h2> */}
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 px-4 mx-auto ">
         {projects.map((project, index) => (
           <ProjectBox

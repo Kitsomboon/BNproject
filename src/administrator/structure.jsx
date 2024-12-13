@@ -1,4 +1,4 @@
-import image1 from "../assets/ong.png";
+import image1 from "../assets/addong.png";
 import { useState } from "react";
 
 function Structure() {

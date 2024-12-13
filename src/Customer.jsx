@@ -8,12 +8,14 @@ import Footer2 from "./componentsindex/Footer2";
 
 import Serapp from "./service/Serapp"
 import Hero5 from "./service/Hero5";
+import About7 from "./service/About7";
 
 function Customer() {
   return (
     <>
       <Nav />
       <Hero9 />
+      <About7 />
       <Hero5 />
       <CircularCarousel />
       <Serapp/>
