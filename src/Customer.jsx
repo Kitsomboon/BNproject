@@ -1,14 +1,12 @@
 import Nav from "./components/Nav";
-import CircularCarousel from "./service/CircularCarousel";
 import Hero9 from "./service/Hero9";
-
-
 import Footer from "./components/Footer";
-import Footer2 from "./componentsindex/Footer2";
 
-import Serapp from "./service/Serapp"
-import Hero5 from "./service/Hero5";
 import About7 from "./service/About7";
+import About8 from "./service/About8";
+import About9 from "./service/About9";
+import About10 from "./service/About10";
+import Dropnav from "./components/Dropnav";
 
 function Customer() {
   return (
@@ -16,10 +14,10 @@ function Customer() {
       <Nav />
       <Hero9 />
       <About7 />
-      <Hero5 />
-      <CircularCarousel />
-      <Serapp/>
-      <Footer2 />
+      <About8 />
+      <About9 />
+      <About10 />
+      <Dropnav />
       <Footer />
     </>
   );
