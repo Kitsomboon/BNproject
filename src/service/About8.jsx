@@ -30,7 +30,7 @@ function About8() {
   ];
 
   return (
-    <div className="container md:w-[1000px] mx-auto  flex-row md:flex justify-between py-2">
+    <div className="container md:w-[1000px] mx-auto  flex-row md:flex justify-between py-8 ">
       {/* Original Card (Left) */}
       <div className="relative group rounded-3xl  shadow-xl shadow-gray-300 w-[auto] md:w-[500px] md:h-[500px] p-8 bg-white h-auto z-10 transition-all duration-200 ease-in-out hover:border-[#d1543c] hover:border-2 border-2 border-[#ffffff]">
         {/* Header Section */}
@@ -52,26 +52,38 @@ function About8() {
         >
           ขั้นตอนการออกแบบ
         </button>
-        <div className="absolute bottom-0 right-0 transform translate-x-[-10%] translate-y-[-10%] text-black transition-all duration-300 ease-in-out group-hover:text-[#d1543c]">
-          <MdOutlineDesignServices size={200} />
-        </div>
+        <div className="hidden md:block absolute bottom-0 right-0 transform translate-x-[-10%] translate-y-[-10%] text-black transition-all duration-300 ease-in-out group-hover:text-[#d1543c]">
+                  <MdOutlineDesignServices size={200} />
+                </div>
+                <div className="absolute md:hidden bottom-0 right-0 transform translate-x-[-10%] translate-y-[-10%] text-black transition-all duration-300 ease-in-out group-hover:text-[#d1543c]">
+                  <MdOutlineDesignServices size={50} />
+                </div>
       </div>
 
       {/* Right Section with 8 New Cards */}
       {showCards && (
-        <div className="flex flex-col space-y-4 py-6">
-          {cardData.map((card, index) => (
-            <div
-            key={index}
-            className="rounded-3xl shadow-lg shadow-gray-300 w-[350px] md:w-[450px] p-4 bg-[#d1543c] h-auto z-8 transition-all duration-200 ease-in-out border-2 border-gray-200"
-            data-aos="fade-up"
-          >
-              <h2 className="text-2xl font-semibold text-white mb-2">{card.title}</h2>
-              <p className="text-white">{card.content}</p>
-            </div>
-          ))}
+  <div className="flex flex-col items-center space-y-4 py-2 mx-auto">
+    {cardData.map((card, index) => (
+      <div
+      key={index}
+      className="rounded-3xl shadow-lg shadow-gray-300 w-[350px] md:w-[450px] p-4 bg-[#16171f] h-auto z-8 transition-all duration-200 ease-in-out border-2 border-gray-200"
+      data-aos="fade-up"
+    >
+      <div className="flex items-center space-x-4">
+        {/* Circle with title */}
+        <div className="flex items-center justify-center w-10 h-10 md:w-16 md:h-16 rounded-full bg-white">
+          <h2 className="text-xl font-bold text-[#16171f]">{card.title}</h2>
         </div>
-      )}
+        {/* Content next to the circle */}
+        <span className="text-white  md:text-lg">{card.content}</span>
+      </div>
+    </div>
+    
+    
+    ))}
+  </div>
+)}
+
     </div>
   );
 }
