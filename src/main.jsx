@@ -10,6 +10,7 @@ import Contact from './Contact.jsx'
 import Customer from './Customer.jsx'
 import BNproject from './BNproject.jsx'
 import ProjectDetail from './projectBN/ProjectDetail';
+import Projectpuma from './projectBN/projectpuma.jsx'
 import Organization from './Organization.jsx'
 import Design from './Design.jsx'
 import Maintain from './Maintain.jsx'
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
   {
     path: "/deteriorate",
     element: <Deteriorate/>, // เพิ่มเส้นทางสำหรับ project-detail
+  },
+  {
+    path: "/projectpuma",
+    element: <Projectpuma/>, // เพิ่มเส้นทางสำหรับ project-detail
   },
  
 ]);
