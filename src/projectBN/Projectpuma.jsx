@@ -45,7 +45,7 @@ function Projectpuma() {
       </div>
 
       <div className="bg-white min-h-screen p-4 mt-20">
-        <div className="bg-gray-300 shadow-lg rounded-lg overflow-hidden mx-auto max-w-10xl p-8">
+        <div className=" overflow-hidden mx-auto max-w-10xl p-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
             {images.map((image, index) => (
               <img
