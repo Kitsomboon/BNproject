@@ -6,7 +6,7 @@ import History from './็History.jsx'
 
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 import Contact from './Contact.jsx'
-
+import Power from './Power.jsx'
 import Customer from './Customer.jsx'
 import BNproject from './BNproject.jsx'
 import ProjectDetail from './projectBN/ProjectDetail';
@@ -61,6 +61,10 @@ const router = createBrowserRouter([
   {
     path: "/projectpuma",
     element: <Projectpuma/>, // เพิ่มเส้นทางสำหรับ project-detail
+  },
+  {
+    path: "/PowerCalculator",
+    element: <Power/>, // เพิ่มเส้นทางสำหรับ project-detail
   },
  
 ]);

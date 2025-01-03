@@ -1,27 +1,41 @@
-import image1 from "/src/assets/lalar1.jpg";
-function Hero8() {
-    return (
-        <div
-          className="relative w-full h-[600px] bg-cover bg-center"
-          style={{
-            backgroundImage: `linear-gradient(to bottom, rgba(255, 165, 8, 1), rgba(0, 32, 0, 0)), url(${image1})`,
-            backgroundBlendMode: "overlay",
-          }}
-        >
-          <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-            <div className="text-center text-white px-4">
-              <h1 className="text-4xl md:text-5xl font-bold mb-2">
-             ออกแบบและติดตั้ง
-              </h1>
-              
-            </div>
-          </div>
-        </div>
-      );
-    }
+import { Link } from "react-router-dom";
 
-export default Hero8
+function Hero11() {
+  return (
+    <div className="container flex flex-wrap justify-center items-center mx-auto py-8 gap-6">
+      {/* Box 1 */}
+      <Link
+        to="/PowerCalculator"
+        className="w-[300px] h-[300px] rounded-3xl bg-[#d1543c] flex justify-center items-center text-white text-center text-2xl font-bold hover:bg-[#b34332] transition-colors duration-300"
+      >
+        คำนวณหาขนาดแผงโซลาร์
+      </Link>
 
+      {/* Box 2 */}
+      <Link
+        to="/electricity-usage"
+        className="w-[300px] h-[300px] rounded-3xl bg-[#d1543c] flex justify-center items-center text-white text-center text-2xl font-bold hover:bg-[#b34332] transition-colors duration-300"
+      >
+        คำนวณค่าใช้งานไฟฟ้า
+      </Link>
 
+      {/* Box 3 */}
+      <Link
+        to="/panel-cost"
+        className="w-[300px] h-[300px] rounded-3xl bg-[#d1543c] flex justify-center items-center text-white text-center text-2xl font-bold hover:bg-[#b34332] transition-colors duration-300"
+      >
+        คำนวณหาค่าไฟฟ้าต่อแผง
+      </Link>
 
+      {/* Box 4 */}
+      <Link
+        to="/required-energy"
+        className="w-[300px] h-[300px] rounded-3xl bg-[#d1543c] flex justify-center items-center text-white text-center text-2xl font-bold hover:bg-[#b34332] transition-colors duration-300"
+      >
+        ค่าที่ต้องใช้
+      </Link>
+    </div>
+  );
+}
 
+export default Hero11;
