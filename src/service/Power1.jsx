@@ -3,7 +3,9 @@ import { useNavigate } from "react-router-dom";
 
 function Calculator() {
   const [numDevices, setNumDevices] = useState(1);
-  const [devices, setDevices] = useState([{ watt: "", hours: "", quantity: 1 }]);
+  const [devices, setDevices] = useState([
+    { watt: "", hours: "", quantity: 1 },
+  ]);
   const [totalPowerWh, setTotalPowerWh] = useState(null);
   const [recommendedSolarSize, setRecommendedSolarSize] = useState(null);
   const [totalInverterSize, setTotalInverterSize] = useState(null);
@@ -72,14 +74,18 @@ function Calculator() {
   return (
     <div className="container mx-auto p-4 bg-[#d1543c] my-20">
       <h1 className="text-3xl font-bold mb-4 text-center text-white">
-        คำนวณค่าการใช้ไฟฟ้าหาขนาดแผงโซลาร์ เครื่องแปลงกระแสไฟฟ้า และแบตเตอรี่
+        คำนวณค่าการใช้ไฟฟ้าหาขนาดแผงโซลาร์
       </h1>
 
       {/* Select Number of Devices */}
       <div className="flex flex-col mb-4">
-        <p className="text-sm text-white text-bold underline mb-4">*การคำนวณจะเป็นจำนวนพลังงานทั้งหมดที่ใช้ทั้งวันใน 1 วัน</p>
-        <label className="text-lg font-medium mb-2 text-white">จำนวนเครื่องใช้ไฟฟ้า:</label>
-        
+        <p className="text-sm text-white text-bold underline mb-4">
+          *การคำนวณจะเป็นจำนวนพลังงานทั้งหมดที่ใช้ทั้งวันใน 1 วัน
+        </p>
+        <label className="text-lg font-medium mb-2 text-white">
+          จำนวนเครื่องใช้ไฟฟ้า:
+        </label>
+
         <input
           type="number"
           value={numDevices}
@@ -87,13 +93,14 @@ function Calculator() {
           min="1"
           className="p-2 border rounded-lg"
         />
-        
       </div>
 
       {/* Input Boxes for Each Device */}
       {devices.map((device, index) => (
         <div key={index} className="mb-4 p-4 border rounded-lg bg-white">
-          <h3 className="text-lg font-bold mb-2">เครื่องใช้ไฟฟ้าชนิดที่ {index + 1}</h3>
+          <h3 className="text-lg font-bold mb-2">
+            เครื่องใช้ไฟฟ้าชนิดที่ {index + 1}
+          </h3>
           <div className="flex flex-col mb-2">
             <label>ค่ากำลังไฟฟ้าของเครื่องใช้ไฟฟ้า (วัตต์/W):</label>
             <input
@@ -135,7 +142,9 @@ function Calculator() {
 
       {/* Battery Voltage */}
       <div className="flex flex-col mb-4">
-        <label className="text-lg font-medium mb-2 text-white">แรงดันไฟฟ้าของแบตเตอรี่ (V):</label>
+        <label className="text-lg font-medium mb-2 text-white">
+          แรงดันไฟฟ้าของแบตเตอรี่ (V):
+        </label>
         <input
           type="number"
           value={batteryVoltage}

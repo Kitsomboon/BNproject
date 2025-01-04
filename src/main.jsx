@@ -15,6 +15,9 @@ import Organization from './Organization.jsx'
 import Design from './Design.jsx'
 import Maintain from './Maintain.jsx'
 import Deteriorate from './Deteriorate.jsx'
+
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -66,6 +69,7 @@ const router = createBrowserRouter([
     path: "/PowerCalculator",
     element: <Power/>, // เพิ่มเส้นทางสำหรับ project-detail
   },
+
  
 ]);
 
