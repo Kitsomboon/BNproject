@@ -16,15 +16,25 @@ function ManagementTeam() {
       {/* Section Header */}
       <div className="text-center mb-12" data-aos="fade-up">
         <h2
-          className="text-4xl font-bold"
-          style={{
-            textDecoration: "underline",
-            textDecorationThickness: "5px",
-            textUnderlineOffset: "10px",
-            textDecorationColor: "orange",
-          }}
-        >
-          คณะผู้บริหาร
+          className="text-3xl font-bold"
+         
+        ><span style={{
+          display: "inline-block",
+          width: "40px",
+          height: "4px",
+          backgroundColor: "#d1543c",
+          marginRight: "10px",
+          verticalAlign: "middle"
+        }}></span>
+          Board of <span className="text-[#d1543c]">Executives</span>
+          <span style={{
+            display: "inline-block",
+            width: "40px",
+            height: "4px",
+            backgroundColor: "#16171f",
+            marginRight: "10px",
+            verticalAlign: "middle"
+          }}></span>
         </h2>
       </div>
 
@@ -44,7 +54,7 @@ function ManagementTeam() {
             style={{ width: "200px", height: "300px" }} // กำหนดขนาดกว้างและสูงของภาพ
           />
 
-          <div className="mt-8 bg-orange-500 p-6  rounded-lg text-center w-full "style={{ width: "300px", height: "120px" }} >
+          <div className="mt-8 bg-[#d1543c] p-6  rounded-lg text-center w-full "style={{ width: "300px", height: "120px" }} >
             <h3 className="text-xl font-semibold text-white">ดร.สุชัจจ์ ศรีแก้ว</h3>
             <p className="text-white">กรรมการผู้จัดการ</p>
             <p className="text-white">บริษัท บี.เอ็ม. โซล่าร์ เพาเวอร์ จำกัด</p>

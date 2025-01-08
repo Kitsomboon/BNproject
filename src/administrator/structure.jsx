@@ -13,14 +13,25 @@ function Structure() {
       {/* Heading */}
       <h2
         className="text-3xl font-bold text-gray-800 mb-8"
-        style={{
-          textDecoration: "underline",
-          textDecorationThickness: "5px",
-          textUnderlineOffset: "10px",
-          textDecorationColor: "orange",
-        }}
+        
       >
-        โครงสร้างองค์กร
+        <span style={{
+          display: "inline-block",
+          width: "40px",
+          height: "4px",
+          backgroundColor: "#d1543c",
+          marginRight: "10px",
+          verticalAlign: "middle"
+        }}></span>
+        Organizational <span className="text-[#d1543c]">Structure</span>
+        <span style={{
+          display: "inline-block",
+          width: "40px",
+          height: "4px",
+          backgroundColor: "#16171f",
+          marginRight: "10px",
+          verticalAlign: "middle"
+        }}></span>
       </h2>
 
       {/* Organization Chart Image with Fullscreen Toggle */}
