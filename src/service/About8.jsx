@@ -98,7 +98,7 @@ function About8() {
             onClick={() => setShowCards(false)}
             className="mt-6 bg-white border border-gray-300 text-gray-600 text-lg px-6 py-4 rounded-full hover:bg-[#d1543c] hover:text-white shadow"
           >
-            กลับไปที่การออกแบบ
+            กลับไปยังก่อนหน้า
           </button>
         </div>
       </div>

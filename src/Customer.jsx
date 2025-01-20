@@ -8,7 +8,7 @@ import About9 from "./service/About9";
 import About10 from "./service/About10";
 import Dropnav from "./components/Dropnav";
 import Hero11 from "./service/Hero11";
-
+import Footer3 from "./componentsindex/Footer3";
 function Customer() {
   return (
     <>
@@ -20,6 +20,7 @@ function Customer() {
       <About10 />
       <Hero11 />
       <Dropnav />
+      <Footer3 />
       <Footer />
     </>
   );

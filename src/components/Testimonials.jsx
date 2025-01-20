@@ -56,8 +56,8 @@ function Testimonials() {
             <div className="flex items-center justify-center  rounded-full mb-4">
               <i className="text-black text-4xl">📱</i>
             </div>
-            <h3 className="text-white text-2xl font-semibold">ออกแบบและติดตั้ง</h3>
-            <p className="text-white text-sm mt-2">บริการออกแบบและติดตั้งระบบโซล่าร์เซลล์อย่างมืออาชีพ</p>
+            <h3 className="text-white text-2xl font-semibold">การออกแบบระบบ</h3>
+            <p className="text-white text-sm mt-2">บริการออกแบบระบบโซล่าร์เซลล์อย่างมืออาชีพ</p>
           </div>
         </div>
 
@@ -71,8 +71,8 @@ function Testimonials() {
             <div className="flex items-center justify-center   rounded-full mb-4">
               <i className="text-black text-4xl">🛠️</i>
             </div>
-            <h3 className="text-white text-2xl font-semibold">บำรุงรักษาประสิทธิภาพระบบโซล่าร์เซลล์</h3>
-            <p className="text-white text-sm mt-2">การบำรุงรักษาเพื่อยืดอายุการใช้งานของระบบโซล่าร์เซลล์</p>
+            <h3 className="text-white text-2xl font-semibold">การติดตั้งโซล่าร์</h3>
+            <p className="text-white text-sm mt-2">การติดตั้งโซล่าร์เซลล์อย่างมืออาชีพ</p>
           </div>
         </div>
 
@@ -86,8 +86,8 @@ function Testimonials() {
             <div className="flex items-center justify-center rounded-full mb-4">
               <i className="text-black text-4xl">♻️</i>
             </div>
-            <h3 className="text-white text-2xl font-semibold">กำจัดแผงโซล่าร์เซลล์ที่เสื่อมสภาพ</h3>
-            <p className="text-white text-sm mt-2">บริการกำจัดและรีไซเคิลแผงโซล่าร์เซลล์เก่า</p>
+            <h3 className="text-white text-2xl font-semibold">บำรุงรักษาประสิทธิภาพระบบโซล่าร์เซลล์</h3>
+            <p className="text-white text-sm mt-2">การบำรุงรักษาเพื่อยืดอายุการใช้งานของระบบโซล่าร์เซลล์</p>
           </div>
         </div>
       </div>
