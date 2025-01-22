@@ -16,14 +16,11 @@ function About8() {
   }, []);
 
   const cardData = [
-    { title: "1", content: "This is the first card with unique text." },
-    { title: "2", content: "This is the second card's description." },
-    { title: "3", content: "Another card with its own content here." },
-    { title: "4", content: "Content for the fourth card is displayed." },
-    { title: "5", content: "The fifth card has something special!" },
-    { title: "6", content: "Unique text for the sixth card appears." },
-    { title: "7", content: "Seventh card content stands out!" },
-    { title: "8", content: "The last card wraps up the series." },
+    { title: "1", content: "PM ตรวจเช็คระบบ" },
+    { title: "2", content: "CM แก้ไข เมื่อระบบเกิดปัญหา" },
+    { title: "3", content: "ทำความสะอาดแผงโซล่าเซลล์ และระบบ" },
+    { title: "4", content: "Monitoring ตรวจดูค่าพลังงาน" },
+    { title: "5", content: "ปรับปรุงระบบ ให้มีประสิทธิภาพ" },
   ];
 
   return (
@@ -81,9 +78,13 @@ function About8() {
               >
                 <div className="flex items-center space-x-4">
                   <div className="flex items-center justify-center w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#16171f]">
-                    <h2 className="text-xl font-bold text-white">{card.title}</h2>
+                    <h2 className="text-xl font-bold text-white">
+                      {card.title}
+                    </h2>
                   </div>
-                  <span className="text-[#16171f] md:text-lg">{card.content}</span>
+                  <span className="text-[#16171f] md:text-lg">
+                    {card.content}
+                  </span>
                 </div>
               </div>
             ))}

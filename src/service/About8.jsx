@@ -16,14 +16,14 @@ function About8() {
   }, []);
 
   const cardData = [
-    { title: "1", content: "This is the first card with unique text." },
-    { title: "2", content: "This is the second card's description." },
-    { title: "3", content: "Another card with its own content here." },
-    { title: "4", content: "Content for the fourth card is displayed." },
-    { title: "5", content: "The fifth card has something special!" },
-    { title: "6", content: "Unique text for the sixth card appears." },
-    { title: "7", content: "Seventh card content stands out!" },
-    { title: "8", content: "The last card wraps up the series." },
+    { title: "1", content: "สำรวจพื้นที่หน้างาน ของความต้องการของลูกค้า" },
+    { title: "2", content: "ออกแบบเพื่อติดตั้งระบบโซล่าร์เซลล์ตามความเหมาะสมของการใช้งาน" },
+    { title: "3", content: "จัดหาวัสดุอุปกรณ์สำหรับงานติดตั้งโซล่าร์เซลล์" },
+    { title: "4", content: "ดำเนินการติดตั้งระบบโซล่าร์เซลล์" },
+    { title: "5", content: "ตรวจสอบการใช้งานของระบบโซล่าร์เซลล์" },
+    { title: "6", content: "ส่งมอบงานติดตั้งระบบโซล่าร์เซลล์" },
+    { title: "7", content: "ใบอนุญาต" }
+    
   ];
 
   return (
@@ -54,7 +54,7 @@ function About8() {
             onClick={() => setShowCards(true)}
             className="bg-white border border-gray-300 text-gray-600 text-lg px-6 py-4 rounded-full hover:bg-[#d1543c] hover:text-white shadow"
           >
-            ขั้นตอนการออกแบบ
+            ขั้นตอนการออกแบบและติดตั้ง
           </button>
           <div className="hidden md:block absolute bottom-0 right-0 transform translate-x-[-10%] translate-y-[-10%] text-black transition-all duration-300 ease-in-out group-hover:text-[#d1543c]">
             <MdOutlineDesignServices size={300} />
