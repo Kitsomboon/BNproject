@@ -50,9 +50,9 @@ import image42 from "/src/assets/Phrae5.jpg";
 import image43 from "/src/assets/W.kere.jpg";
 import image44 from "/src/assets/W.kere1.jpg";
 import image45 from "/src/assets/W.kere2.jpg";
-import image46 from "/src/assets/W.kere3.jpg";
+import image46 from "/src/assets/W.kere6.jpg";
 import image47 from "/src/assets/W.kere4.jpg";
-import image48 from "/src/assets/W.kere5.jpg";
+import image48 from "/src/assets/W.kere7.jpg";
 
 export const projects = [
   {
