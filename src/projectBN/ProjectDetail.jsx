@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import Nav from "../components/Nav";
-import image1 from "/src/assets/thapkhlo4.jpg";
+import image1 from "/src/assets/solar10.jpg";
 import Footer from "../components/Footer";
 import Footer2 from "../componentsindex/Footer2";
 
@@ -31,7 +31,7 @@ function ProjectDetail() {
       <div
         className="relative w-full h-[600px] bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(255, 165, 8, 1), rgba(0, 32, 0, 0)), url(${image1})`,
+          backgroundImage: `linear-gradient(to bottom, rgb(189, 113, 13), rgba(224, 188, 5, 0.65)), url(${image1})`,
           backgroundBlendMode: "overlay",
         }}
       >
