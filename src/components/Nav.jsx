@@ -24,7 +24,7 @@ function Nav() {
     <nav
       className={`fixed top-0 left-0 w-full p-3 z-[100] transition-all duration-500 ${
         isScrolled
-          ? "bg-[#16171f] bg-opacity-100 shadow-lg md:rounded-b-[100px]" // โค้งเฉพาะเดสก์ท็อป
+          ? "bg-[#16171f] bg-opacity-100 shadow-lg md:rounded-b-[50px]" // โค้งเฉพาะเดสก์ท็อป
           : "bg-transparent"
       }`}
     >

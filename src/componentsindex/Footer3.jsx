@@ -2,7 +2,7 @@ import image1 from "/src/assets/B.Nlo.jpg";
 
 function Footer3() {
   return (
-    <footer className="bg-[#ffffff] py-8 px-4 w-full">
+    <footer className="bg-[#ffffff] py-8  w-full">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start">
         {/* Left Section */}
         <div className="mb-6 md:mb-0 md:w-1/3 flex items-center md:justify-start">
@@ -14,10 +14,10 @@ function Footer3() {
         </div>
 
         {/* Middle Section */}
-        <div className="mb-6 md:mb-0">
-          <h4 className="text-lg font-semibold text-[#16171f] mb-4 border border-[#d1543c] rounded-full px-4 py-2 inline-block">
-            Online Contact Channels
-          </h4>
+        <div >
+          <h3 className="text-lg font-semibold text-[#16171f] mb-4 border border-[#d1543c] rounded-full px-4 py-2 inline-block">
+          Contact Online
+          </h3>
           <ul className="space-y-4">
             <li className="flex items-center space-x-2">
               <i className="lab la-line text-[#06c755] text-2xl  "></i>
@@ -35,7 +35,7 @@ function Footer3() {
         </div>
 
         {/* Right Section - Information */}
-        <div className="mb-6 md:mb-0">
+        <div >
           <h4 className="text-lg font-semibold text-[#16171f] mb-4 border border-[#d1543c] rounded-full px-4 py-2 inline-block">
             Information
           </h4>
@@ -55,7 +55,7 @@ function Footer3() {
         </div>
 
         {/* Right Section - Location */}
-        <div>
+        <div >
           <h4 className="text-lg font-semibold text-[#16171f] mb-4 border border-[#d1543c] rounded-full px-4 py-2 inline-block">
             Location
           </h4>

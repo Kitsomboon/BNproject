@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import image1 from "../assets/thapkhlo.jpg";
-import image2 from "../assets/solsr5.jpg";
+import image2 from "../assets/lalar1.jpg";
 import image3 from "../assets/thapkhlo3.jpg";
 
 function Oneinimg() {
