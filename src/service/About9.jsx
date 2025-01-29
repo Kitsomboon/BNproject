@@ -1,101 +1,142 @@
-import { useState, useEffect } from "react";
+import image1 from "/src/assets/ggp.png";
+import image2 from "/src/assets/mea.png";
+import image3 from "/src/assets/pea.png";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { MdSettings } from "react-icons/md"; // Updated icon
-import { FaSolarPanel } from "react-icons/fa";
+import { useEffect } from "react";
 
-function About8() {
-  const [showCards, setShowCards] = useState(false);
-
+const About9 = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
-      easing: "ease-in-out",
-      once: true,
+      duration: 1200,
     });
   }, []);
 
-  const cardData = [
-    { title: "1", content: "This is the first card with unique text." },
-    { title: "2", content: "This is the second card's description." },
-    { title: "3", content: "Another card with its own content here." },
-    { title: "4", content: "Content for the fourth card is displayed." },
-    { title: "5", content: "The fifth card has something special!" },
-    { title: "6", content: "Unique text for the sixth card appears." },
-    { title: "7", content: "Seventh card content stands out!" },
-    { title: "8", content: "The last card wraps up the series." },
-  ];
-
   return (
-    <div className="container md:w-[1000px] mx-auto flex justify-center py-8">
-      <div
-        className={`relative w-[1000px] h-[800px] md:h-[550px] md:w-[1000px] transition-transform duration-500 hover:border-[#d1543c] group ${
-          showCards ? "rotate-y-180" : ""
-        }`}
+    <div className="flex flex-col min-h-screen items-center ">
+      <h2
+        className="text-4xl font-bold text-black mb-8 text-center"
+        style={{
+          position: "relative",
+        }}
+        data-aos="fade-up"
       >
-        {/* Front Side */}
+        <span
+          style={{
+            display: "inline-block",
+            width: "40px",
+            height: "4px",
+            backgroundColor: "#d1543c",
+            marginRight: "10px",
+            verticalAlign: "middle",
+          }}
+        ></span>
+        ใบอนุญาต
+        <span style={{ color: "#d1543c" }}> License</span>
+        <span
+          style={{
+            display: "inline-block",
+            width: "40px",
+            height: "4px",
+            backgroundColor: "#16171f",
+            marginRight: "10px",
+            verticalAlign: "middle",
+          }}
+        ></span>
+        <p className="text-[16px] font-normal text-gray-600 text-center">
+        การขอใบอนุญาต
+        </p>
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        {/* กล่องที่ 1 */}
         <div
-          className={`absolute inset-0 bg-white rounded-3xl shadow-xl shadow-gray-300 p-8 transform hover:border-[#d1543c] hover:border-4 border-4 border-[#ffffff] group ${
-            showCards ? "hidden" : "block"
-          }`}
+          className="relative bg-white p-6 shadow-lg rounded-[30px] border border-[5px] border-[#d1543c] text-center w-full md:w-[400px] h-full md:h-[500px]"
+          data-aos="fade-right"
         >
-          <div className="flex justify-between items-center mb-4">
-            <div className="flex items-center space-x-2">
-              <FaSolarPanel className="text-yellow-500 text-3xl" />
-              <h2 className="text-4xl font-bold text-black">Setup Steps</h2>
-            </div>
-          </div>
-          <div className="border-b border-gray-300 my-2"></div>
-          <p className="text-gray-600 text-lg mb-6">
-            You may want to explore Too CSS for a great collection of free HTML
-            CSS templates.
-          </p>
-          <button
-            onClick={() => setShowCards(true)}
-            className="bg-white border border-gray-300 text-gray-600 text-lg px-6 py-4 rounded-full hover:bg-[#d1543c] hover:text-white shadow"
+          {/* กล่องเล็ก */}
+          <div
+            className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#d1543c] text-white rounded-full w-[250px] h-[50px] flex items-center 
+            justify-center shadow-md text-xl border border-[2px] border-[#ffffff]"
+            
           >
-            ขั้นตอนการติดตั้ง
-          </button>
-          <div className="hidden md:block absolute bottom-0 right-0 transform translate-x-[-10%] translate-y-[-10%] text-black transition-all duration-300 ease-in-out group-hover:text-[#d1543c]">
-            <MdSettings size={300} /> {/* Updated icon */}
+            ใบขออนุญาตก่อสร้าง
           </div>
-          <div className="absolute md:hidden bottom-0 right-0 transform translate-x-[-10%] translate-y-[-10%] text-black transition-all duration-300 ease-in-out group-hover:text-[#d1543c]">
-            <MdSettings size={200} /> {/* Updated icon */}
-          </div>
+          <h3
+            className="text-6xl font-semibold text-[#16171f] pt-32"
+            data-aos="fade-up"
+          >
+            กนอ. 02
+          </h3>
+          <h3
+            className="text-6xl font-semibold text-[#16171f] pt-16"
+            data-aos="fade-up"
+          >
+            อ. 1
+          </h3>
         </div>
 
-        {/* Back Side */}
+        {/* กล่องที่ 2 */}
         <div
-          className={`absolute inset-0 bg-[#16171f] rounded-2xl shadow-xl shadow-gray-600 p-8 transform ${
-            showCards ? "block" : "hidden"
-          }`}
+          className="relative bg-white p-6 shadow-lg rounded-[30px] border border-[5px] border-[#d1543c] text-center w-full md:w-[400px] h-full md:h-[500px]"
+          data-aos="fade-up"
         >
-          <div className="grid-cols-2 md:grid">
-            {cardData.map((card, index) => (
-              <div
-                key={index}
-                className="rounded-3xl shadow-lg shadow-gray-300 w-full p-4 bg-white h-auto z-8 transition-all duration-400 ease-in-out border-2 border-gray-300"
-                data-aos="fade-up"
-              >
-                <div className="flex items-center space-x-4">
-                  <div className="flex items-center justify-center w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#16171f]">
-                    <h2 className="text-xl font-bold text-white">{card.title}</h2>
-                  </div>
-                  <span className="text-[#16171f] md:text-lg">{card.content}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-          <button
-            onClick={() => setShowCards(false)}
-            className="mt-6 bg-white border border-gray-300 text-gray-600 text-lg px-6 py-4 rounded-full hover:bg-[#d1543c] hover:text-white shadow"
+          {/* กล่องเล็ก */}
+          <div
+            className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#d1543c] text-white rounded-full w-[250px] h-[50px] flex items-center justify-center shadow-md text-xl"
+            
           >
-            กลับไปยังก่อนหน้า
-          </button>
+            ขึ้นทะเบียนโซล่าร์เซลล์
+          </div>
+          <h3
+            className="text-3xl font-semibold text-[#16171f] pt-4"
+            data-aos="fade-up"
+          >
+            พค.2/ใบยกเว้น
+          </h3>
+          <img
+            src={image1}
+            alt="ขึ้นทะเบียนโซล่าร์เซลล์"
+            className="w-auto h-32 mx-auto mt-4"
+            data-aos="zoom-in"
+          />
+        </div>
+
+        {/* กล่องที่ 3 */}
+        <div
+          className="relative bg-white p-6 shadow-lg rounded-[30px] border border-[5px] border-[#d1543c] text-center w-full md:w-[400px] h-full md:h-[500px]"
+          data-aos="fade-left"
+        >
+          {/* กล่องเล็ก */}
+          <div
+            className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#d1543c] text-white rounded-full w-[250px] h-[50px] flex items-center justify-center shadow-md text-xl"
+            
+          >
+            เชื่อมต่อกับการไฟฟ้า
+          </div>
+          <h3
+            className="text-3xl font-semibold text-[#16171f] pt-4"
+            data-aos="fade-up"
+          >
+            ใบขนานไฟฟ้า
+          </h3>
+          <img
+            src={image2}
+            alt="เชื่อมต่อกับการไฟฟ้า"
+            className="w-auto h-48 mx-auto"
+            data-aos="zoom-in"
+          />
+          <img
+            src={image3}
+            alt="เชื่อมต่อกับการไฟฟ้า"
+            className="w-auto h-48 mx-auto"
+            data-aos="zoom-in"
+          />
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default About8;
+export default About9;

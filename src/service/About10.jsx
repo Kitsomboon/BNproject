@@ -28,7 +28,7 @@ const ServiceGrid = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-16">
+    <div className="min-h-screen flex flex-col items-center justify-center ">
       {/* เพิ่มหัวข้อด้านบน */}
       <h2
         className="text-4xl font-bold text-black mb-8 text-center"
@@ -47,8 +47,8 @@ const ServiceGrid = () => {
             verticalAlign: "middle",
           }}
         ></span>
-        Performance 
-        <span style={{ color: "#d1543c" }}> Maintenance</span>
+        Maintenance and  
+        <span style={{ color: "#d1543c" }}> Performance Inspection</span>
         <span
           style={{
             display: "inline-block",
