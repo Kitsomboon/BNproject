@@ -1,11 +1,11 @@
-import image1 from "/src/assets/thapkhlo.jpg";
-import image2 from "/src/assets/thapkhlo1.jpg";
-import image3 from "/src/assets/thapkhlo2.jpg";
-import image4 from "/src/assets/W.kere.jpg";
-import image5 from "/src/assets/W.kere1.jpg";
-import image6 from "/src/assets/W.kere2.jpg";
-import image7 from "/src/assets/W.kere3.jpg";
-import image8 from "/src/assets/W.kere4.jpg";
+import image1 from "/src/assets/ppt1.jpg";
+import image2 from "/src/assets/yub5.jpg";
+import image3 from "/src/assets/thapkhlo4.jpg";
+import image4 from "/src/assets/Phrae1.jpg";
+import image5 from "/src/assets/nong2.jpg";
+import image6 from "/src/assets/thapkhlo.jpg";
+import image7 from "/src/assets/solar10.jpg";
+import image8 from "/src/assets/yub1.jpg";
 import { useState, useEffect, useRef } from "react";
 
 function CircularCarousel2() {
@@ -70,7 +70,7 @@ function CircularCarousel2() {
           {getVisibleImages().map((image, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-1/4 h-full transition-transform duration-500"
+              className="flex-shrink-0 sm:w-full md:w-1/4 h-full transition-transform duration-500"
             >
               <img
                 src={image}

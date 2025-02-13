@@ -1,4 +1,4 @@
-import image1 from "../assets/addong.png";
+import image1 from "../assets/bnn.png";
 import { useState } from "react";
 
 function Structure() {
@@ -9,29 +9,28 @@ function Structure() {
   };
 
   return (
-    <div className="flex flex-col items-center  py-20 px-4">
+    <div className="flex flex-col items-center py-20 px-4">
+      
       {/* Heading */}
-      <h2
-        className="text-3xl font-bold text-gray-800 mb-8"
+      <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
         
-      >
-        <span style={{
-          display: "inline-block",
-          width: "40px",
-          height: "4px",
-          backgroundColor: "#d1543c",
-          marginRight: "10px",
-          verticalAlign: "middle"
-        }}></span>
-        Organizational <span className="text-[#d1543c]">Structure</span>
-        <span style={{
-          display: "inline-block",
-          width: "40px",
-          height: "4px",
-          backgroundColor: "#16171f",
-          marginRight: "10px",
-          verticalAlign: "middle"
-        }}></span>
+        {/* เส้นแถบบน (สำหรับมือถือ) */}
+        <span className="block md:hidden w-16 h-1 bg-[#d1543c] mx-auto mb-2"></span>
+        
+        <div className="flex flex-col md:flex-row items-center justify-center">
+          {/* เส้นแถบซ้าย (สำหรับเดสก์ท็อป) */}
+          <span className="hidden md:inline-block w-10 h-1 bg-[#d1543c] mr-2"></span>
+          
+          <span>Organizational</span>
+          <span className="text-[#d1543c]">&nbsp;Structure</span>
+
+          {/* เส้นแถบขวา (สำหรับเดสก์ท็อป) */}
+          <span className="hidden md:inline-block w-10 h-1 bg-[#16171f] ml-2"></span>
+        </div>
+
+        {/* เส้นแถบล่าง (สำหรับมือถือ) */}
+        <span className="block md:hidden w-16 h-1 bg-[#16171f] mx-auto mt-2"></span>
+
       </h2>
 
       {/* Organization Chart Image with Fullscreen Toggle */}
@@ -45,15 +44,10 @@ function Structure() {
         <img
           src={image1}
           alt="Organization Chart"
-          className="rounded-lg object-contain"
-          style={{
-            width: isFullScreen ? "90vw" : "1000px",
-            height: isFullScreen ? "90vh" : "900px",
-          }}
+          className="rounded-lg object-contain w-full md:w-[1000px] h-auto max-h-[90vh]"
         />
       </div>
 
-     
     </div>
   );
 }

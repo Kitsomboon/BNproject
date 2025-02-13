@@ -1,4 +1,3 @@
-// นำเข้ารูปภาพ
 import image1 from "/src/assets/icon.png";
 import image2 from "/src/assets/icon1.png";
 import image3 from "/src/assets/icon2.png";
@@ -31,43 +30,33 @@ const ServiceGrid = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-16">
-      {/* เพิ่มหัวข้อด้านบน */}
-      <h2
-        className="text-4xl font-bold text-black mb-8 text-center"
-        style={{
-          position: "relative",
-        }}
-        data-aos="fade-up"
-      >
-        <span
-          style={{
-            display: "inline-block",
-            width: "40px",
-            height: "4px",
-            backgroundColor: "#d1543c",
-            marginRight: "10px",
-            verticalAlign: "middle",
-          }}
-        ></span>
-        Design
-        <span style={{ color: "#d1543c" }}> and Installation</span>
-        <span
-          style={{
-            display: "inline-block",
-            width: "40px",
-            height: "4px",
-            backgroundColor: "#16171f",
-            marginRight: "10px",
-            verticalAlign: "middle",
-          }}
-        ></span>
-        <p className="text-[16px] font-normal text-gray-600 text-center">
+    <div className="min-h-screen flex flex-col items-center justify-center p-8 md:p-16">
+      {/* Section Header */}
+      <div className="text-center mb-8" data-aos="fade-up">
+        
+        {/* เส้นแถบบน (มือถือ) */}
+        <span className="block md:hidden w-16 h-1 bg-[#d1543c] mx-auto mb-2"></span>
+
+        <div className="flex flex-col md:flex-row items-center justify-center">
+          {/* เส้นแถบซ้าย (เดสก์ท็อป) */}
+          <span className="hidden md:inline-block w-10 h-1 bg-[#d1543c] mr-2"></span>
+          
+          <h2 className="text-3xl font-bold text-black">Design<span className="text-[#d1543c]"> and Installation</span></h2>
+          
+          {/* เส้นแถบขวา (เดสก์ท็อป) */}
+          <span className="hidden md:inline-block w-10 h-1 bg-[#16171f] ml-2"></span>
+        </div>
+
+        {/* เส้นแถบล่าง (มือถือ) */}
+        <span className="block md:hidden w-16 h-1 bg-[#16171f] mx-auto mt-2"></span>
+
+        <p className="text-[16px] font-normal text-gray-600 mt-4">
           เรามีการให้คำปรึกษาและแนะนำในการออกแบบและติดตั้งระบบโซล่าร์เซลล์ จากผู้เชี่ยวชาญ
         </p>
-      </h2>
+      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl">
+      {/* Grid Layout */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl">
         {services.map((service) => (
           <div
             key={service.id}
@@ -77,7 +66,7 @@ const ServiceGrid = () => {
             <img
               src={service.icon}
               alt={service.title}
-              className="w-48 h-48 mb-4"
+              className="w-24 h-24 md:w-32 md:h-32 mb-4"
             />
             <h3 className="text-lg font-semibold text-[#d1543c]">{service.title}</h3>
           </div>

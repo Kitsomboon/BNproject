@@ -5,6 +5,7 @@ import Hero3 from "./policy/Hero3";
 import Structure from "./administrator/structure";
 import ManagementTeam from "./administrator/ManagementTeam";
 import Footer3 from "./componentsindex/Footer3";
+import Hero4 from "./administrator/Hero4";
 
 function Organization() {
   return (
@@ -13,6 +14,7 @@ function Organization() {
     <Hero3 /> 
     <ManagementTeam />
     <Structure />
+    <Hero4 />
    <Footer3 />
     <Footer />
     

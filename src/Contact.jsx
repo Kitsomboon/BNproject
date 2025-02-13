@@ -12,7 +12,7 @@ function Contact() {
     <Hero6 />
     <About2 />
    
-    
+  
     <Footer />
     </>
   )
