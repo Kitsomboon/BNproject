@@ -14,7 +14,7 @@ function Hero8() {
                     <h1 className="text-3xl md:text-5xl font-bold mb-2">
                     <span style={{ color: "#ffffff" }}>Contact</span>   </h1>
                     <p className="text-lg md:text-gl">
-                    
+                    หากสนใจเข้าร่วมกับบริษัท บี.เอ็น. โซล่า เพาเวอร์ จำกัด หรือต้องการข้อมูลเพิ่มเติม กรุณาติดต่อเรา
                     </p>
                 </div>
             </div>

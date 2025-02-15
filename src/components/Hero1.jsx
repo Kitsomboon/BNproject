@@ -59,7 +59,7 @@ function Hero1() {
                         data-aos="fade-right"
                     >
                         <p className="text-lg mt-4 py-4">
-                            ยินดีต้อนรับสู่บริษัท บี.เอ็น.โซล่า เพาเวอร์ จำกัด
+                            ยินดีต้อนรับสู่บริษัท
                         </p>
                         <h1 className="text-4xl lg:text-6xl font-extrabold mb-4">
                             บี.เอ็น.โซล่า เพาเวอร์ จำกัด

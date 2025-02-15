@@ -57,7 +57,7 @@ function CircularCarousel2() {
 
   return (
     <div
-      className="w-full bg-gray-800 py-10"
+      className="w-full bg-[#16171f] py-10"
       ref={containerRef}
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}

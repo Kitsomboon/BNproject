@@ -57,7 +57,7 @@ const About9 = () => {
         {/* กล่องที่ 2 */}
         <div className="relative bg-white p-6 shadow-lg rounded-[30px] border-4 border-[#d1543c] text-center w-full max-w-md" data-aos="fade-up">
           {/* กล่องเล็ก */}
-          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#d1543c] text-white rounded-full w-[250px] h-[50px] flex items-center justify-center shadow-md text-xl">
+          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#d1543c] text-white rounded-full w-[250px] h-[50px] flex items-center justify-center shadow-md text-xl border border-white">
             ขึ้นทะเบียนโซล่าร์เซลล์
           </div>
           <h3 className="text-2xl font-semibold text-[#16171f] pt-6" data-aos="fade-up">
@@ -69,7 +69,7 @@ const About9 = () => {
         {/* กล่องที่ 3 */}
         <div className="relative bg-white p-6 shadow-lg rounded-[30px] border-4 border-[#d1543c] text-center w-full max-w-md" data-aos="fade-left">
           {/* กล่องเล็ก */}
-          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#d1543c] text-white rounded-full w-[250px] h-[50px] flex items-center justify-center shadow-md text-xl">
+          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#d1543c] text-white rounded-full w-[250px] h-[50px] flex items-center justify-center shadow-md text-xl border border-white">
             เชื่อมต่อกับการไฟฟ้า
           </div>
           <h3 className="text-2xl font-semibold text-[#16171f] pt-6" data-aos="fade-up">

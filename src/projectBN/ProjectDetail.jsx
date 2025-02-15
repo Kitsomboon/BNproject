@@ -3,7 +3,7 @@ import { useState } from "react";
 import Nav from "../components/Nav";
 import image1 from "/src/assets/solar10.jpg";
 import Footer from "../components/Footer";
-import Footer3 from "../componentsindex/Footer3";
+
 
 function ProjectDetail() {
   const location = useLocation();
@@ -77,7 +77,7 @@ function ProjectDetail() {
           </button>
         </div>
       )}
-      <Footer3 />
+      
       <Footer />
     </div>
   );
