@@ -89,6 +89,12 @@ import image76 from "/src/assets/noi3.jpg";
 import image77 from "/src/assets/noi4.jpg";
 import image78 from "/src/assets/noi5.jpg";
 
+import image79 from "/src/assets/nw.jpg";
+import image80 from "/src/assets/nw2.jpg";
+import image81 from "/src/assets/nw3.jpg";
+import image82 from "/src/assets/nw4.jpg";
+import image83 from "/src/assets/nw5.jpg";
+import image84 from "/src/assets/nw6.jpg";
 
 
 
@@ -167,6 +173,11 @@ export const projects = [
   {
     images: [image73, image74, image75, image76, image77, image78,],
     title: "เกาะหมากน้อย",
-    description: "ขนาดติดตั้ง  kW"
+    description: "ขนาดติดตั้ง 206 kW"
+  },
+  {
+    images: [image79, image80, image81, image82, image83, image84,],
+    title: "โรงแรมนวรัตน์ จังหวัดกำแพงเพชร",
+    description: "ขนาดติดตั้ง 41.25 kW"
   },
 ];

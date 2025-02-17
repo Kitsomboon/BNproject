@@ -127,20 +127,21 @@ function Nav() {
                 เกี่ยวกับ
               </button>
             </li>
-            <li>
-              <button
-                className="text-white text-2xl focus:outline-none px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
-                onClick={() => handleLinkClick("/customer")}
-              >
-                บริการ
-              </button>
-            </li>
+            
             <li>
               <button
                 className="text-white text-2xl focus:outline-none px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
                 onClick={() => handleLinkClick("/organization")}
               >
                 โครงสร้างองค์กร
+              </button>
+            </li>
+            <li>
+              <button
+                className="text-white text-2xl focus:outline-none px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
+                onClick={() => handleLinkClick("/customer")}
+              >
+                บริการ
               </button>
             </li>
             <li>
