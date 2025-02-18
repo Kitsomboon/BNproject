@@ -1,4 +1,4 @@
-import image1 from "/src/assets/solar3.jpg";
+import image1 from "/src/assets/so.jpg";
 
 function Hero8() {
     return (

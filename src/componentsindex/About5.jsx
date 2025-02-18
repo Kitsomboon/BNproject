@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // นำเข้า CSS ของ AOS
 import { FaSolarPanel } from "react-icons/fa"; // นำเข้าไอคอนโซลาร์เซลล์
-import image1 from "../assets/m.jpeg";
+import image1 from "../assets/si.jpg";
 
 function About5() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -30,7 +30,7 @@ function About5() {
           {/* Add Solar Icon Before Text */}
           
         </h1><span className="text-[#d1543c] flex items-center  md:text-5xl font-bold mb-6"  data-aos="fade-up">
-            <FaSolarPanel className="text-[#d1543c] text-5xl mr-2" />
+            <FaSolarPanel className="text-[#d1543c] text-3xl md:text-6xl mr-2" />
             B.N. SOLAR POWER
           </span>
         <div
@@ -40,14 +40,14 @@ function About5() {
           <img
             src={image1}
             alt="Interior Design"
-            className="w-full max-w-[700px] h-auto rounded-lg shadow-lg mx-auto md:mx-0"
+            className="w-full max-w-[auto] h-[auto] rounded-lg shadow-lg mx-auto md:mx-0"
           />
         </div>
       </div>
 
       {/* Right Side - Paragraph Content */}
       <div
-        className="md:w-1/2 flex flex-col items-center md:items-start md:text-left py-48"
+        className="md:w-1/2 flex flex-col items-center md:items-start md:text-left py-2 md:py-48"
         data-aos="fade-left" // เอฟเฟกต์สำหรับข้อความด้านขวา
       >
         <p className="text-gray-600 text-lg mb-10">
