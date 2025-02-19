@@ -23,8 +23,8 @@ const router = createBrowserRouter([
     element: <App/>,//
   },
   {
-    path: "/index",
-    element: <History/>,//
+    path: "/history",
+    element: <History/>, //
   },
   {
     path: "/contact",

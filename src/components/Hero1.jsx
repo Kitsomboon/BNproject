@@ -76,7 +76,7 @@ function Hero1() {
                             <div
                                 className="flex flex-col items-center"
                                 data-aos="zoom-in"
-                                onClick={() => handleLinkClick("/index")}
+                                onClick={() => handleLinkClick("/history")}
                             >
                                 <div className="w-20 h-20 bg-[#d1543c] hover:bg-[#2a4056] text-white rounded-full flex items-center justify-center shadow-lg">
                                     <IoFilmOutline size={30} />

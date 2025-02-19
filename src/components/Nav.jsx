@@ -67,7 +67,7 @@ function Nav() {
           <li>
             <button
               className="text-white px-4 py-2 rounded hover:bg-[#d1543c] hover:text-[#000000] transition duration-300"
-              onClick={() => handleLinkClick("/index")}
+              onClick={() => handleLinkClick("/history")}
             >
               เกี่ยวกับ
             </button>
@@ -122,7 +122,7 @@ function Nav() {
             <li>
               <button
                 className="text-white text-2xl focus:outline-none px-4 py-2 rounded hover:bg-black hover:text-orange-500 transition duration-300"
-                onClick={() => handleLinkClick("/index")}
+                onClick={() => handleLinkClick("/history")}
               >
                 เกี่ยวกับ
               </button>
