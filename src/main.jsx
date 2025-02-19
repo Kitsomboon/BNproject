@@ -6,14 +6,13 @@ import History from './็History.jsx'
 
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 import Contact from './Contact.jsx'
-import Power from './Power.jsx'
+
 import Customer from './Customer.jsx'
 import BNproject from './BNproject.jsx'
 import ProjectDetail from './projectBN/ProjectDetail';
-import Projectpuma from './projectBN/projectpuma.jsx'
+
 import Organization from './Organization.jsx'
-import Design from './Design.jsx'
-import Maintain from './Maintain.jsx'
+
 import Deteriorate from './Deteriorate.jsx'
 
 
@@ -21,24 +20,24 @@ import Deteriorate from './Deteriorate.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App/>,//
   },
   {
     path: "/index",
-    element: <History/>,
+    element: <History/>,//
   },
   {
     path: "/contact",
-    element: <Contact/>,
+    element: <Contact/>,//
   },
  
   {
     path: "/customer",
-    element: <Customer/>,
+    element: <Customer/>, //
   },
   {
     path: "/project",
-    element: <BNproject/>,
+    element: <BNproject/>,//
   },
   
   {
@@ -47,28 +46,16 @@ const router = createBrowserRouter([
   },
   {
     path: "/organization",
-    element: <Organization/>, // เพิ่มเส้นทางสำหรับ project-detail
+    element: <Organization/>, //
   },
-  {
-    path: "/design",
-    element: <Design />, // เพิ่มเส้นทางสำหรับ project-detail
-  },
-  {
-    path: "/maintain",
-    element: <Maintain/>, // เพิ่มเส้นทางสำหรับ project-detail
-  },
+ 
+ 
   {
     path: "/deteriorate",
-    element: <Deteriorate/>, // เพิ่มเส้นทางสำหรับ project-detail
+    element: <Deteriorate/>, // 
   },
-  {
-    path: "/projectpuma",
-    element: <Projectpuma/>, // เพิ่มเส้นทางสำหรับ project-detail
-  },
-  {
-    path: "/PowerCalculator",
-    element: <Power/>, // เพิ่มเส้นทางสำหรับ project-detail
-  },
+  
+
 
  
 ]);
