@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import History from './็History.jsx'
+import History from './History.jsx'
 
 import {createBrowserRouter,RouterProvider,} from "react-router-dom";
 import Contact from './Contact.jsx'
